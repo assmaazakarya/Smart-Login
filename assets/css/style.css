@@ -1,0 +1,98 @@
+/* & global styles*/
+body{
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+.inner{
+  overflow: hidden;
+}
+.left::before{
+  content:'';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #0576e6;
+  border-radius: 50%;
+  top:65%;
+  right:50%;
+}
+.left:after{
+  content:'';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #0576e6;
+  border-radius: 50%;
+  top: 60%;
+  right:60%;
+}
+input{
+  border: 1px solid rgba(128, 128, 128, 0.234);
+}
+input::placeholder{
+  color:rgba(128, 128, 128, 0.617) ;
+}
+input:focus{
+  outline: none;
+}
+button.swal2-confirm.swal2-styled{
+  background-color: #0575E6;
+  padding-inline: 40px;
+}
+/* ************************* Utilities ************************* */
+/* ? color utilities */
+.color-grey{
+  color:rgba(128, 128, 128, 0.617) ;
+}
+.blue-bg-color{
+  background-color: #0575E6;
+}
+/* ? display utilities */
+.d-toggle{
+  display: none;
+}
+/* ? bg-color utilities */
+.blue{
+  background-image: linear-gradient(to bottom, #0575E6 0% , #02298A 85% , #021B79 100%);
+}
+/* ? font size  utilities*/
+.fs-12px{
+  font-size: 12px;
+}
+.fs-14px{
+  font-size: 14px;
+}
+/* ? padding utilities */
+.py-5px{
+  padding-block: 5px;
+}
+.px-25px{
+  padding-inline: 25px;
+}
+.py-100px{
+  padding-block: 100px;
+}
+.px-100px{
+  padding-inline: 100px;
+}
+.px-35px{
+  padding-inline: 35px;
+}
+.start-20px{
+  left: 15px;
+  top:20px;
+}
+/* ? margin */
+.mb-22px{
+  margin-bottom: 22px;
+}
+/* ? shadow */
+.box-shadow{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!! Media Query !!!!!!!!!!!!!!!!!!!!!!!!! */
+@media (min-width: 768px) {
+  .d-toggle{
+    display: block;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login System</title>
+  <!-- ^========|> Favicon  -->
+  <link rel="icon" href="./assets/imgs/login.png" />
+  <!-- ! Google Fonts -->
+  <!-- ? Poppins font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+  <!-- *========|> Font awesome library -->
+  <link rel="stylesheet" href="./assets/css/all.min.css" />
+  <!-- *========|> Bootstrap -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <!-- *========|> Main stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <main>
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="box-shadow row w-100">
+            <div class="p-0 d-toggle col-md-7">
+                <div class="inner position-relative h-100 left blue text-white py-100px d-flex justify-content-center align-items-start">
+                    <div class="py-100px">
+                    <h1 class="h2 mt-5 mb-0 fw-bold">GoFinance</h1>
+                    <p class="mb-2 fs-12px fw-light">The most popular peer to peer lending at SEA</p>
+                    <button class="fs-14px mb-5 py-5px px-25px btn btn-primary rounded-pill fw-light">Read More</button>                    
+                    </div>
+                </div>
+            </div>
+            <div class="p-0 col-12 col-md-5">
+                <div class="inner right bg-white py-100px d-flex justify-content-center">
+                <div class="">
+                <h2 class="h3 mb-3">Hello!<span>Again</span></h2>
+                <p class="mb-3">Wellcome Back</p>
+                <form class="mb-22px">                  
+                    <div class="mb-4 position-relative">
+                        <input class="form-control px-35px py-3 rounded-pill" type="email" name="email" id="email" placeholder="Email Address">
+                        <i class="color-grey fa-solid fa-envelope start-20px position-absolute"></i>
+                    </div>
+                    <div class="mb-4 position-relative">
+                        <input class="form-control px-35px py-3 rounded-pill" type="password" name="pass" id="pass" placeholder="Password">
+                        <i class="color-grey fa-solid fa-lock start-20px position-absolute"></i>
+                    </div>
+                    <button class="log-in w-100 py-2 blue-bg-color border-0 text-white rounded-pill" type="button">Login</button>
+                    <p class="mt-2">
+                    Don’t have an account?<a href="./register.html">Sign Up</a>
+                    </p>
+                  </form>    
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- ?========|> Boostrap Js file -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- ?========|> sweet alert Js file -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- ?========|> Main Js File -->
+  <script type="module" src="./assets/js/login.js"></script>
+</body>
+
+</html>

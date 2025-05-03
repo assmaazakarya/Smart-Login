@@ -54,7 +54,34 @@ button.swal2-confirm.swal2-styled{
 /* ? bg-color utilities */
 .blue{
   background-image: linear-gradient(to bottom, #0575E6 0% , #02298A 85% , #021B79 100%);
+  z-index: 10;
+  left: 35%;
+  animation: moveTOLeft 1s 500ms forwards; 
+} 
+@keyframes moveTOLeft{
+ 0%{
+  left: 35%;
+ }
+ 100%{
+  left: 0%;
+ }
 }
+
+ .right{
+  position: relative;
+  right: 35%;
+  animation: moveTORight 1s 500ms forwards;
+ }
+
+ @keyframes moveTORight{
+  0%{
+   right: 35%;
+  }
+  100%{
+   right: 0%;
+  }
+ }
+ 
 /* ? font size  utilities*/
 .fs-12px{
   font-size: 12px;
@@ -89,6 +116,10 @@ button.swal2-confirm.swal2-styled{
 /* ? shadow */
 .box-shadow{
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* ? width */
+.w-10 {
+width: 10%;
 }
 /* !!!!!!!!!!!!!!!!!!!!!!! Media Query !!!!!!!!!!!!!!!!!!!!!!!!! */
 @media (min-width: 768px) {

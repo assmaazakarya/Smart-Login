@@ -21,8 +21,6 @@ function validateInput(input){
   }
 
 function checkUserExist(userEmail){   
-  console.log(userEmail)
-  console.log(usersList);
   if(usersList.length === 0){
     Swal.fire({
               icon: "error",
@@ -31,7 +29,6 @@ function checkUserExist(userEmail){
         })
         var errorBtn = document.querySelector('.swal2-confirm')  
         errorBtn.addEventListener('click',function(){
-        window.location.href = 'register.html'
         })
   }else{
     for(var i = 0 ; i < usersList.length ; i++){
@@ -54,7 +51,6 @@ function checkUserExist(userEmail){
       })
       var errorBtn = document.querySelector('.swal2-confirm')  
       errorBtn.addEventListener('click',function(){
-              window.location.href = 'register.html'
       })
     }
   }
